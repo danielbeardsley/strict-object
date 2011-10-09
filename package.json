@@ -1,0 +1,16 @@
+{
+	"name": "strict-object",
+	"description": "",
+	"version": "0.0.0",
+	"repository": {},
+	"author": "Daniel Beardsley <daniel.beardsley@gmail.com> (www.danielbeardsley.com)",
+	"directories": {
+		"lib": "."
+	},
+	"devDependencies": {
+		"vows": "0.5.x"
+	},
+	"engines": {
+		"node": "*"
+	}
+}
