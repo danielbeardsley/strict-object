@@ -19,6 +19,16 @@ vows.describe('SO').addBatch({
 			
 			'that has a _toObject() function' : function(o){
 				assert.ok(typeof o._toObject === 'function');
+			},
+			
+			'that has a name() function that sets the name property' : function(o){
+				o.name('Danny');
+				assert.equal('Danny', o._toObject().name);
+			},
+			
+			'that has a name() function that gets the name property' : function(o){
+				o.name('George');
+				assert.equal('George', o.name());
 			}
 		}
 	}
