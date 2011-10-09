@@ -12,7 +12,7 @@ vows.describe('SO').addBatch({
 			var o = new strictObject();
 		},
 		
-		'should create an object': {
+		'should create an object that': {
 			topic: function(strictObject){
 				return new strictObject();
 			},
@@ -21,12 +21,16 @@ vows.describe('SO').addBatch({
 				assert.ok(typeof o._toObject === 'function');
 			},
 			
-			'that has a name() function that sets the name property' : function(o){
+			'has a name(val) function that sets the name property' : function(o){
 				o.name('Danny');
 				assert.equal('Danny', o._toObject().name);
 			},
 			
-			'that has a name() function that gets the name property' : function(o){
+			'has a name(val) function that is chainable' : function(o){
+				assert.equal(o, o.name('dummy'));
+			},
+			
+			'has a name() function that gets the name property' : function(o){
 				o.name('George');
 				assert.equal('George', o.name());
 			}
