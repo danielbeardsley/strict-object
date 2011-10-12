@@ -5,7 +5,7 @@ SO = require('../lib/strictObject.js');
 vows.describe('SO').addBatch({
 	'A simple SO with one property': {
 		topic: function() {
-			return SO.create(['name'])
+			return SO.define(['name'])
 		},
 
 		'should allow creation of new objects': function(strictObject){
@@ -58,7 +58,7 @@ vows.describe('SO').addBatch({
 
 	'An SO with several properties': {
 		topic: function() {
-			return SO.create(['name','age','occupation','height']);
+			return SO.define(['name','age','occupation','height']);
 		},
 
 		'should allow creation of new objects': function(strictObject){
