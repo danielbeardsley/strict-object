@@ -1,16 +1,25 @@
 {
 	"name": "strict-object",
-	"description": "",
-	"version": "1.0",
-	"repository": {},
+	"description": "A utility to create instantiateable objects with simple getters and setters.  Cleaner syntax, typo-proof code.",
+	"version": "1.0.0",
+	"homepage": "https://github.com/danielbeardsley/strict-object",
 	"author": "Daniel Beardsley <daniel.beardsley@gmail.com> (www.danielbeardsley.com)",
-	"directories": {
-		"lib": "."
-	},
+	"files": [
+		"lib/strictObject.js"
+	],
+	"main": "lib/strictObject.js",
 	"devDependencies": {
 		"vows": "0.5.x"
 	},
 	"engines": {
 		"node": "*"
-	}
+	},
+	"scripts": {
+		"test": "vows test/test.js"
+	},
+	"repository" : {
+		"type" : "git",
+		"url" : "git://github.com/danielbeardsley/strict-object.git"
+	},
+	"bugs" : { "web" : "https://github.com/danielbeardsley/strict-object/issues" }
 }
