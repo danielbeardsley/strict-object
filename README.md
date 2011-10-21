@@ -2,6 +2,13 @@
 A utility that makes it safer and prettier to deal with javascript objects that have a
 defined set of properties.
 
+### Installing ###
+strict-object is compatable with npm, browsers, windows script host,and probably more.
+
+```
+npm install strict-object
+```
+
 When minified, strict-object.js ends up less than 400 bytes.
 
 ### What ###
