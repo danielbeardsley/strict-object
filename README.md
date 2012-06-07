@@ -34,6 +34,20 @@ pete.name('Peter')
 
 // retrieve the properties as an object
 console.log(pete._toObject()); // {name: 'Peter', age: 26, country: 'Uzbekistan'}
+
+// Instatiate a Person with initial values
+var pete = new Person({
+	name: "Peter",
+	age: 26,
+	country: "Uzbekawhat?"
+});
+
+```
+
+### Running Tests ###
+
+```
+npm test
 ```
 
 ### Why ###
