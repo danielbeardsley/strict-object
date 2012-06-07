@@ -2,6 +2,8 @@
 A utility that makes it safer and prettier to deal with javascript objects that have a
 defined set of properties.
 
+Status: [![Build Status](https://secure.travis-ci.org/danielbeardsley/strict-object.png?branch=master)](http://travis-ci.org/danielbeardsley/strict-object)
+
 ### Installing ###
 strict-object is compatable with npm, browsers, windows script host,and probably more.
 
