@@ -5,7 +5,7 @@ SO = require('../lib/strictObject.js');
 vows.describe('SO').addBatch({
 	'A simple SO with one property': {
 		topic: function() {
-			return SO.define(['name'])
+			return SO.define(['name']);
 		},
 
 		'should allow creation of new objects': function(strictObject){
@@ -63,6 +63,21 @@ vows.describe('SO').addBatch({
 
 		'should allow creation of new objects': function(strictObject){
 			var o = new strictObject();
+		},
+
+		'should allow passing in initial values to the constructor': function(strictObject){
+			var init = {
+				name: "d",
+				age: 12,
+				occupation: "s",
+				height: 1234
+			};
+			var o = new strictObject(init);
+			assert.equal(o.occupation(),  init.occupation);
+			assert.equal(o.age(),			init.age);
+			assert.equal(o.height(),		init.height);
+			assert.equal(o.name(),		  init.name);
+			assert.equal(o._toObject(),	init);
 		},
 
 		'creates objects with a _toObject() function which returns only the attributes that have been set' : function(strictObject){
