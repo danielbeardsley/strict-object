@@ -75,3 +75,7 @@ thing = new Thing()
 	.key("value")
 	.key2("value2");
 ```
+
+### License ###
+No License, the content of this repository is in the public domain, no
+attribution is necessary.
