@@ -16,7 +16,7 @@ When minified, strict-object.js ends up less than 400 bytes.
 ### What ###
 ```javascript
 // Create a new person type
-var Person = StrictObject.define('name', 'age', 'country');
+var Person = StrictObject.define(['name', 'age', 'country']);
 
 // Instatiate a Person
 var pete = new Person();
